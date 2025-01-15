@@ -20,11 +20,40 @@
         <section>
             <h2>My Story</h2>
             <p>Placeholder about biography, skills, and passions</p>
+        
+            <h2>My Interests</h2>
+
+            <!--Tabs for Music and Movies-->
+            <div class = "tab">
+                <button class = "tablink" onclick = "openCategory(event, 'Music')">Music</button>
+                <button class = "tablink" onclick = "openCategory(event, 'Movies')">Movies</button>
+            </div>
+
+            <!--Music Content-->
+            <h3>My Favorite Music</h3>
+            <div class = "gallery">
+                    <img src = "images/February.jpg" alt = "Music 1">
+                    <img src = "images/Sean.jpg" alt = "Music 2">
+                    <img src = "images/music3.jpg" alt = "Music 3">
+                </div>
+            </div>
+
+            <!--Movies Content-->
+            <div id = "Movies" class = "tabcontent">
+                <h3>My Favorite Movies</h3>
+                <div class = "gallery">
+                    <img src = "images/La La land.htm" alt = "Movie 1">
+                    <img src = "images/movie2.jpg" alt = "Movie 2">
+                    <img src = "images/movie3.jpg" alt = "Movie 3">
+                </div>
+            </div>
+
         </section>
         <footer>
             <h3>Contact</h3>
             <p>Email: <a href = "mailto:natgonza99@gmail.com>natgonza99@gmail.com</a></p>
             <p>&copy; 2025 Nathanael. All Rights Reserved.</p>
         </footer>
+        <script src ="script.js"></script><!--Link to scripts.js file-->
     </body>
 </html>
