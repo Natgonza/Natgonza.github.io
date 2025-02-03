@@ -21,3 +21,34 @@ function openCategory(evt, categoryName) {
 }//end openCategory
 
 document.getElementsByClassName("tablink")[0].click();
+
+
+
+
+//Script for Playing video when picture is clicked
+document.addEventListener("DOMContentLoaded", () => {
+    const albumCovers = document.querySelector(".album-cover");
+    const popup = document.querySelector("video-popup");
+    const videoFrame = document.querySelector("video-frame");
+    const closebtn = document.querySelector(".close-btn");
+
+    albumCovers.forEach((cover) => {
+        cover.addEventListener("click", () => {
+            let videoUrl = cover.getAttribute("data-video-url");
+            videoFrame.src = videoUrl;
+            popup.style.display = "flex";
+        });
+    });
+
+    closebtn.addEventListener("click", () => {
+        popup.style.display = "none";
+        videoFrame.src = "";
+    });
+
+    popup.addEventListener("click", () => {
+        if (event.target === popup) {
+            popup.style.display = "none";
+            videoFrame.src = "";
+        }
+    });
+});
