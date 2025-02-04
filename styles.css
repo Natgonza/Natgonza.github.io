@@ -14,6 +14,35 @@ header {
     text-align: left;
 }
 
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20 px;
+}
+
+
+/* Styling for the Resume section */
+
 /*header container for resume.html*/
 .header-container {
     display: flex;
@@ -49,30 +78,7 @@ header {
     border-radius: 8px;
 }
 
-header h1 {
-    margin: 0;
-}
-
-nav ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20 px;
-}
-
+/* Styling for Work Experience in Resume Section */
 #experience {
     background: #333;
     color: white;
