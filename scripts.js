@@ -27,9 +27,9 @@ document.getElementsByClassName("tablink")[0].click();
 
 //Script for Playing video when picture is clicked
 document.addEventListener("DOMContentLoaded", () => {
-    const albumCovers = document.querySelector(".album-cover");
-    const popup = document.querySelector("video-popup");
-    const videoFrame = document.querySelector("video-frame");
+    const albumCovers = document.querySelectorAll(".album-cover");
+    const popup = document.querySelector(".video-popup");
+    const videoFrame = document.querySelector(".video-frame");
     const closebtn = document.querySelector(".close-btn");
 
     albumCovers.forEach((cover) => {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         videoFrame.src = "";
     });
 
-    popup.addEventListener("click", () => {
+    popup.addEventListener("click", (event) => {
         if (event.target === popup) {
             popup.style.display = "none";
             videoFrame.src = "";
