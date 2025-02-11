@@ -1,49 +1,95 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang="en">
 
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content="width=device-width, initial-sclae=1.0">
-        <title>Nathanael's Portfolio</title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <title>Nathanael's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 
-    <!--The body of the page-->
-    <body>
-        <!--Header Section-->
-        <header>
-            <h1>Nathanael Gonzalez</h1>
-            <h3>Server/Programmer</h3>
-            <nav>
+<!--The body of the page-->
+<header>
+    <!--Header Section-->
+    <div class="header-container">
+        <nav>
+            <img src="Images/Logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+            <button class="resume-button"><img src="Images/icons/resume_Icon.png" alt="Resume"> Resume Download
+            </button>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutCol1">
+                    <img src="Images/bubba.jpeg" alt="Profile Picture">
+                </div>
+                <div class="aboutCol2">
+                    <div class="index content">
+                        <div class="rotatingHeading">
+                            <h1>
+                                I am a
+                                <div class="innerHeading">
+                                    <span>
+                                        Programmer <br />
+                                        Server <br />
+                                        Bartender <br />
+                                        Team Player <br />
+                                    </span>
+                                </div>
+                            </h1>
+                        </div>
+                    </div>
+                    <p>Hi, I’m Nathanael, a computer science major with a passion for software development, game design, and compiler construction. I enjoy building modular and efficient 
+                        systems, from rhythm-based games to custom shells. My experience spans Java, Python, and data analysis, and I’m always looking to expand my skill set. Currently,
+                         I’m working on refining my portfolio and developing projects that blend creativity with technical problem-solving</p>
+
+                         <div class = "tabTitles">
+                            <p class = "tabLinks">skills</p>
+                            <p class = "tabLinks">experience</p>
+                            <p class = "tabLinks">education</p>
+                         </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class=" footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target="_blank"><img
+                        src="Images/icons/linkedin_Icon.png" alt="LinkedIn"></a>
+                <a href="" target="_blank"><img src="Images/icons/GitHub_Icon.png" alt="GitHub"></a>
+                <a href="" target="_blank"><img src="Images/icons/TikTok_Icon.png" alt="TikTok"></a>
+                <a href="" target="_blank"><img src="Images/icons/Instagram_Icon.png" alt="Instagram"></a>
+                <a href="" target="_blank"><img src="Images/icons/YouTube_Icon.png" alt="YouTube"></a>
+            </div>
+            <div class="footerNav">
                 <ul>
-                    <li><a href = "about.html">About Me</a></li>
-                    <li><a href = "#projects">Projects</a></li>
-                    <li><a href = "resume.html">Resume</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
 
-        <!--About Section-->
-        <section id = "about">
-            <h2>Welcome to my digital world!</h2>
-            <p>Since I built my first computer back in 2020 I discovered a new world in computing.
-                I always had a knack when it came to technology but after building my first computer and 
-                making my very first "Hello World" program I knew that I wanted to pursue a career in
-                programming and cybersecurity. I am currently a student at New Mexico State University for 
-                a bachelor's degree in Computer Science and I am also studying for my CompTIA Security+ certification.
-            </p>
-        </section>
+            <div class="footerBottom">
+                <p>&copy; Nathanael Gonzalez 2025 Desined By: Nathanael Gonzalez</p>
+            </div>
+    </footer>
+</body>
 
-    
 
-        <footer>
-            <h3>Contact</h3>
-            <p>Email: <a href = "mailto:natgonza99@gmail.com">natgonza99@gmail.com</a></p>
-            <p>LinkedIn: <a href = "www.linkedin.com/in/nathanael-gonzalez-09a1502ba">Nathanael Gonzalez</a></p>
-            <p>&copy; 2025 Nathanael. All Rights Reserved.</p>
-        </footer>
-
-    </body>
 </html>
