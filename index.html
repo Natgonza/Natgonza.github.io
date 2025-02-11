@@ -15,7 +15,7 @@
     <!--Header Section-->
     <div class="header-container">
         <nav>
-            <img src="Images/Logo.png" alt="Logo" class="logo">
+            <img src="Images/Logo.png" alt="Nathanael Gonzalez" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -34,32 +34,47 @@
         <div class="container">
             <div class="row">
                 <div class="aboutCol1">
-                    <img src="Images/bubba.jpeg" alt="Profile Picture">
+                    <img src="Images/bubba.jpeg" alt="introPicture">
                 </div>
+
                 <div class="aboutCol2">
                     <div class="index content">
-                        <div class="rotatingHeading">
-                            <h1>
-                                I am a
-                                <div class="innerHeading">
-                                    <span>
-                                        Programmer <br />
-                                        Server <br />
-                                        Bartender <br />
-                                        Team Player <br />
-                                    </span>
-                                </div>
-                            </h1>
-                        </div>
+                        <h1>About Me</h1>
                     </div>
-                    <p>Hi, I’m Nathanael, a computer science major with a passion for software development, game design, and compiler construction. I enjoy building modular and efficient 
-                        systems, from rhythm-based games to custom shells. My experience spans Java, Python, and data analysis, and I’m always looking to expand my skill set. Currently,
-                         I’m working on refining my portfolio and developing projects that blend creativity with technical problem-solving</p>
+
+                    
+                    <p>Hello, I’m Nathanael, a computer science major at New Mexico State University with a passion for software development, machine learning, and compiler construction. I enjoy building modular and efficient 
+                        systems, basic neural networks to basic compilers. My experience spans Java, Python, and data analysis, and I’m always looking to expand my skill set. Currently,
+                         I’m working on refining my portfolio and developing projects that blend creativity with technical problem-solving. Please feel free to explore my one virutal world.</p>
 
                          <div class = "tabTitles">
-                            <p class = "tabLinks">skills</p>
-                            <p class = "tabLinks">experience</p>
-                            <p class = "tabLinks">education</p>
+                            <p class="tabLinks activeLink" onclick="opentab('skills')">Skills</p>
+                            <p class="tabLinks" onclick="opentab('experience')">Experience</p>
+                            <p class="tabLinks" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class = "tabContents activeTab" id = "skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                <li><span>Languages</span><br>Java, C++, C, and Python</li>
+                                <li><span>Programming Language Structure</span><br>Compiler, Syntax, Grammer, and Structure</li>
+                                <li><span>Databases</span><br>SQL and MongoDB</li>
+                            </ul>
+                         </div>
+                         <div class = "tabContents" id = "experience">
+                            <ul>
+                                <li><span>Amador Live</span><br>Server/Banquet Captain</li>
+                                <li><span>New Mexico Vintage Wines</span><br>Bartender</li>
+                                <li><span>Double Eagle De Mesilla</span><br>Server/Banquet Captain</li>
+                                <li><span>Databases</span><br>SQL and MongoDB</li>
+                            </ul>
+                         </div>
+                         <div class = "tabContents" id = "education">
+                            <ul>
+                                <li><span>Bachelors in Computer Science</span><br>New Mexico State University</li>
+                                <li><span>Assosiate of Science</span><br>Dona Ana Community College</li>
+                                <li><span>High School Diploma</span><br>Gadsden High School</li>
+                                
+                            </ul>
                          </div>
                 </div>
             </div>
@@ -69,12 +84,11 @@
     <footer>
         <div class=" footerContainer">
             <div class="socialIcons">
-                <a href="https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target="_blank"><img
-                        src="Images/icons/linkedin_Icon.png" alt="LinkedIn"></a>
-                <a href="" target="_blank"><img src="Images/icons/GitHub_Icon.png" alt="GitHub"></a>
-                <a href="" target="_blank"><img src="Images/icons/TikTok_Icon.png" alt="TikTok"></a>
-                <a href="" target="_blank"><img src="Images/icons/Instagram_Icon.png" alt="Instagram"></a>
-                <a href="" target="_blank"><img src="Images/icons/YouTube_Icon.png" alt="YouTube"></a>
+                <a href = "https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target = "_blank"><img src = "Images/icons/linkedin_Icon.png" alt = "LinkedIn"></a>
+                    <a href = "https://github.com/Natgonza" target = "_blank"><img src = "Images/icons/GitHub_Icon.png" alt = "GitHub"></a>
+                    <a href = "" target = "_blank"><img src = "Images/icons/TikTok_Icon.png" alt = "TikTok"></a>
+                    <a href = "https://www.instagram.com/natgonza69/" target = "_blank"><img src = "Images/icons/Instagram_Icon.png" alt = "Instagram"></a>
+                    <a href = "" target = "_blank"><img src = "Images/icons/YouTube_Icon.png" alt = "YouTube"></a>
             </div>
             <div class="footerNav">
                 <ul>
@@ -86,9 +100,36 @@
             </div>
 
             <div class="footerBottom">
-                <p>&copy; Nathanael Gonzalez 2025 Desined By: Nathanael Gonzalez</p>
+                <p>&copy; Nathanael Gonzalez 2025 Designed By: Nathanael Gonzalez</p>
             </div>
     </footer>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tabLinks")
+        var tabContents = document.getElementsByClassName("tabContents")
+        function opentab(tabname) {
+            for(tabLink of tabLinks) {
+                tabLink.classList.remove("activeLink")
+            }
+            for(tabContent of tabContents) {
+                tabContent.classList.remove("activeTab")
+            }
+            event.currentTarget.classList.add("activeLink");
+            document.getElementById(tabname).classList.add("activeTab")
+        }
+    </script>
+
+
+
+    <!----------------portfolio---------------->
+    <div id="portfolio">
+        <div class = "container">
+            <h2>My Projects</h2>
+            <div class = "projectList">
+                
+            </div>
+        </div>
+    </div>
 </body>
 
 
