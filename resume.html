@@ -1,185 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
-        <title>Resume</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            .container {
-                display: flex;
-                flex-wrap: wrap;/*Wrap sections to next line if they don't fit*/    
-                justify-content: space-between;/*Space between sections */
-                padding:20px;
-            }
-            .section {
-                width: 30%; /*Width of the section*/
-                margin-bottom: 20px;
-            }
-        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /*Wrap sections to next line if they don't fit*/
+            justify-content: space-between;
+            /*Space between sections */
+            padding: 20px;
+        }
 
-    </head>
+        .section {
+            width: 30%;
+            /*Width of the section*/
+            margin-bottom: 20px;
+        }
+    </style>
 
-    <!--Header of the webpage-->
-    <header>
-        <!--Header Section-->
-        <div class="header-container">
-            <nav>
-                <img src = "Images/Logo.png" alt = "Logo" class = "logo">
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "resume.html">Resume</a></li>
-                </ul>
-                <button class="resume-button"><img src = "Images/icons/resume_Icon.png" alt = "Resume"> Resume Download </button>
-            </nav>
+</head>
+
+<!--Header of the webpage-->
+<header>
+    <!--Header Section-->
+    <div class="header-container">
+        <nav>
+            <img src="Images/Logo.png" alt="Nathanael Gonzalez" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <a href="Nathanael Gonzalez Resume Revised 2025.pdf" download <button class="resume-button"><img
+                src="Images/icons/resume_Icon.png" alt="Resume">Download Resume</button></a>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="resumeHeader">
+        <h1>Nathanael Gonzalez</h1>
+        <h3>Programmer/Server</h3>
+    </div>
+    <div class="infoColums">
+        <div class="column">
+            <!--Languages-->
+            <h3>Languages</h3>
+            <ul>
+                <li>Java
+                    <ul>
+                        <li>JavaFX</li>
+                    </ul>
+                </li>
+                <li>Python
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Pytorch</li>
+                    </ul>
+                </li>
+                <li>HTML5, CSS, and JavaScript</li>
+                <li>SQL</li>
+                <li>C and C++</li>
+            </ul>
         </div>
-    </header>
 
-    <body>
-        <div class= "resumeHeader">
-            <h1>Nathanael Gonzalez</h1>
-            <h3>Programmer/Server</h3>
+        <div class="column">
+            <!--Tools-->
+            <h3>Tools</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>MySQL</li>
+                <li>SolidWorks</li>
+                <li>AutoCAD AutoDesk</li>
+                <li>Microsoft Office Suite</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+
         </div>
-        <div class = "container">
-            <div class = "section"> 
-                <!--Languages-->
-                <h3>Languages</h3>
-                <ul>
-                    <li>Java
-                        <ul>
-                            <li>JavaFX</li>
-                        </ul>
-                    </li>
-                    <li>Python
-                        <ul>
-                            <li>Pandas</li>
-                            <li>Matplotlib</li>
-                            <li>Seaborn</li>
-                            <li>Pytorch</li>
-                        </ul>
-                    </li>
-                    <li>HTML5, CSS, and JavaScript</li>
-                    <li>SQL</li>
-                    <li>C and C++</li>
-                </ul>
-            </div>
 
-            <div class "section">
-                <!--Tools-->
-                <h3>Tools</h3>
-                <ul>
-                    <li>Visual Studio Code</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>MySQL</li>
-                    <li>SolidWorks</li>
-                    <li>AutoCAD AutoDesk</li>
-                    <li>Microsoft Office Suite</li>
-                    <li>Adobe Photoshop</li>
-                </ul>
-
-            </div>
-
-            <div class = "section">
-                <!--Skills-->
-                <h3>Skills</h3>
-                <ul>
-                    <li>Problem Solving</li>
-                    <li>Time Management</li>
-                    <li>Teamwork</li>
-                    <li>Communication</li>
-                    <li>Leadership</li>
-                    <li>Adaptability</li>
-                    <li>Organization</li>
-                    <li>Creativity</li>
-                </ul>
+        <div class="column">
+            <!--Skills-->
+            <h3>Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Leadership</li>
+                <li>Adaptability</li>
+                <li>Organization</li>
+                <li>Creativity</li>
+            </ul>
         </div>
 
 
         <!--Experience Section-->
-        <section id ="experience">
+        <section id="experience">
             <h2>Professional Experience</h2>
-            
-            <div class = "job">
+
+            <div class="job">
                 <!--Amador Job-->
                 <h3>Server/Banquet Captain (April 2022 - January 2025)</h3>
                 <h4>Amador Hospitality Inc. - Las Cruces, NM</h4>
 
 
                 <p>
-                    Amador Live Eatery and Entertainment District is a multi-venue establishment with two bars and two restaurants.
-                    Amador Live hosts high-profile events such as concerts and movie premieres, many of which are sold-out shows.
-                    These events require strong time management skills, extensive knowledge of the drink and food selections available,
+                    Amador Live Eatery and Entertainment District is a multi-venue establishment with two bars and two
+                    restaurants.
+                    Amador Live hosts high-profile events such as concerts and movie premieres, many of which are
+                    sold-out shows.
+                    These events require strong time management skills, extensive knowledge of the drink and food
+                    selections available,
                     and effective communication to answer guest questions.
                 </p>
 
                 <p>
-                    Responsibilities as the Banquet Captain included setting up multiple events such as political ceremonies, weddings,
-                    fundraisers, and college athletic recruitment events. I ensured that event leaders were satisfied and accommodated by staff.
-                    Additionally, I assigned roles to other servers and provided solutions for any issues that arose during events.
+                    Responsibilities as the Banquet Captain included setting up multiple events such as political
+                    ceremonies, weddings,
+                    fundraisers, and college athletic recruitment events. I ensured that event leaders were satisfied
+                    and accommodated by staff.
+                    Additionally, I assigned roles to other servers and provided solutions for any issues that arose
+                    during events.
                 </p>
+
+                <br>
 
                 <!--New Mexico Vintage Wines-->
                 <h3>Bartender (August 2021 - February 2022)</h3>
                 <h4>New Mexico Vintage Wines - Mesilla, NM</h4>
 
                 <p>
-                    New Mexico Vintage Wines is a wine shop/bar that has live music every weekend, the responsibilities required are
-                    knowledge of wines and wine pairing as well as recommendations, making and distribution of drinks(as there are no
-                    servers), preparation of simple foods such as charcuterie boards, as well as taking inventory after every shift and
+                    New Mexico Vintage Wines is a wine shop/bar that has live music every weekend, the responsibilities
+                    required are
+                    knowledge of wines and wine pairing as well as recommendations, making and distribution of drinks(as
+                    there are no
+                    servers), preparation of simple foods such as charcuterie boards, as well as taking inventory after
+                    every shift and
                     communication to management as well as other staff members what is in stock.
                 </p>
+
+                <br>
 
                 <!--Double Eagle-->
                 <h3>Server/Banquet Captain (February 2020 - August 2021)</h3>
                 <h4>Double Eagle De Mesilla - Mesilla, NM</h4>
 
                 <p>
-                    Double Eagle de Mesilla is a high-end dining restaurant where professionalism is required. As an assistant manager to
-                    the banquet department, many requirements included running and managing many events over my time there
-                    including weddings, company dinners, political groups, and many celebrities and high-ranking people such as Elon
-                    Musk and Richard Branson. As a server, my responsibilities included drink knowledge such as wine pairings and
-                    alcohol prices as well as availability. Table-side cooking was also required as servers must make salads and desserts in
-                    front of the guests and supply entertainment well doing so. 
+                    Double Eagle de Mesilla is a high-end dining restaurant where professionalism is required. As an
+                    assistant manager to
+                    the banquet department, many requirements included running and managing many events over my time
+                    there
+                    including weddings, company dinners, political groups, and many celebrities and high-ranking people
+                    such as Elon
+                    Musk and Richard Branson. As a server, my responsibilities included drink knowledge such as wine
+                    pairings and
+                    alcohol prices as well as availability. Table-side cooking was also required as servers must make
+                    salads and desserts in
+                    front of the guests and supply entertainment well doing so.
                 </p>
             </div>
         </section>
 
-        <section id = "education">
+        <section id="education">
             <h2>Education</h2>
-            <h3>New Mexico State University</h3>
-            <h4>&nbsp;&nbsp;&nbsp;&nbsp;BS (2020 - Current) Major: Computer Science; GPA: 3.1 - New Mexico State University, Las
-                Cruces, NM</h4>
-            
-            <h3>Gadsden High School</h3>
-            <h4>&nbsp;&nbsp;&nbsp;&nbsp;High School Diploma (2018) GPA: 3.6 - Gadsden High School, Anthony, NM</h4>
+            <div class="school">
+                <h3>New Mexico State University</h3>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;BS (2020 - Current) Major: Computer Science; GPA: 3.1 - New Mexico State
+                    University, Las
+                    Cruces, NM</h4>
+
+                <h3>Gadsden High School</h3>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;High School Diploma (2018) GPA: 3.6 - Gadsden High School, Anthony, NM</h4>
+            </div>
         </section>
 
-        
-        <footer>
-            <div class = "footerContainer">
-                <div class = "socialIcons">
-                    <a href = "https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target = "_blank"><img src = "Images/icons/linkedin_Icon.png" alt = "LinkedIn"></a>
-                    <a href = "https://github.com/Natgonza" target = "_blank"><img src = "Images/icons/GitHub_Icon.png" alt = "GitHub"></a>
-                    <a href = "" target = "_blank"><img src = "Images/icons/TikTok_Icon.png" alt = "TikTok"></a>
-                    <a href = "https://www.instagram.com/natgonza69/" target = "_blank"><img src = "Images/icons/Instagram_Icon.png" alt = "Instagram"></a>
-                    <a href = "" target = "_blank"><img src = "Images/icons/YouTube_Icon.png" alt = "YouTube"></a>
-                </div>
-                <div class = "footerNav">
-                    <ul>
-                        <li><a href = "index.html">Home</a></li>
-                        <li><a href = "projects.html">Projects</a></li>
-                        <li><a href = "about.html">About</a></li>
-                        <li><a href = "resume.html">Resume</a></li>
-                    </ul>
-                </div>
 
-                <div class = "footerBottom">
-                    <p>&copy; Nathanael Gonzalez 2025 Designed By: Nathanael Gonzalez</p>
-                </div>
-        </footer>
-    </body>
+</body>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target="_blank"><img
+                    src="Images/icons/linkedin_Icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Natgonza" target="_blank"><img src="Images/icons/GitHub_Icon.png"
+                    alt="GitHub"></a>
+            <a href="" target="_blank"><img src="Images/icons/TikTok_Icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/natgonza69/" target="_blank"><img src="Images/icons/Instagram_Icon.png"
+                    alt="Instagram"></a>
+            <a href="" target="_blank"><img src="Images/icons/YouTube_Icon.png" alt="YouTube"></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+
+        <div class="footerBottom">
+            <p>&copy; Nathanael Gonzalez 2025 Designed By: Nathanael Gonzalez</p>
+        </div>
+</footer>
+
 </html>

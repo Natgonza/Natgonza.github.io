@@ -6,77 +6,50 @@
         <title>About Me</title>
         <link rel = "stylesheet" href = "styles.css">
     </head>
+    <header>
+        <!--Header Section-->
+    <div class="header-container">
+        <nav>
+            <img src="Images/Logo.png" alt="Nathanael Gonzalez" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <a href="Nathanael Gonzalez Resume Revised 2025.pdf" download <button class="resume-button"><img
+                src="Images/icons/resume_Icon.png" alt="Resume">Download Resume</button></a>
+            </button>
+        </nav>
+    </div>
+    </header>
     <body>
-        <header>
-            <h1>About Me</h1>
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "resume.html">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <h2>My Story</h2>
-            <p>Hello!</p>
-            <p>My name is Nathanael, I come from a small town in New Mexico called La Mesa, and I am currently studying computer science at New Mexico State University.</p>
-        
-            <h2>My Interests</h2>
-
-            <!--Tabs for Music and Movies-->
-            <div class = "tab">
-                <button class = "tablink" onclick = "openCategory(event, 'Music')">Music</button>
-                <button class = "tablink" onclick = "openCategory(event, 'Movies')">Movies</button>
-            </div>
-
-            <!--Music Content-->
-            <h3>My Favorite Music</h3>
-            <p>Here are some of my favorite albums and my favorite song from each album.</p>
-            <div class = "gallery">
-                    <img src = "Images/February.jpg" alt = "February by February" class = "album cover" data-video="https://www.youtube.com/embed/QEwTtDXlpB4?si=y5jcgIgpc85kVmm6">
-                    <img src="Images/bubba.jpeg" alt = "Bubba by Kaytranada" class = "album cover" data-video="https://www.youtube.com/embed/S2-wrJ9yYiQ?si=Cwa_CuTkNgiPMS4O">
-                    <img src = "Images/Foxtails.jpg" alt = "III by Foxtails" class = "album cover" data-video="https://www.youtube.com/embed/3TztoNTFrN8?si=OJltV_lJBI8t7slY">
-                    <img src = "Images/Buds.jpg" alt = "Buds by Surf Curse" class = "album cover" data-video="https://www.youtube.com/embed/VIDEO_ID_4">
-                    <img src = "Images/You Are Going To Hate This.jpg" alt = "You Are Going To Hate This by The Frights" class = "album cover" data-video="https://www.youtube.com/embed/VIDEO_ID_5">
-                    <img src = "Images/Being So Normal.jpg" alt = "Being So Normal by Peach Pit"class = "album cover" data-video="https://www.youtube.com/embed/VIDEO_ID_6">
-                </div>
-
-                <!--Hidden Video Box-->
-                <div id="video-popup" class="popup">
-                    <div class="popup-content">
-                        <span class="close-btn">&times;</span>
-                        <iframe id="video-frame" width="560" height="315" title="Video player" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!--Movies Content-->
-            <div id = "Movies" class = "tabcontent">
-                <h3>My Favorite Movies</h3>
-                <div class = "gallery">
-                    <img src = "images/La La land.htm" alt = "Movie 1">
-                    <img src = "images/movie2.jpg" alt = "Movie 2">
-                    <img src = "images/movie3.jpg" alt = "Movie 3">
-                </div>
-            </div>
-
-        </section>
-
-        <section id = "hobbies">
-            <h2>My Hobbies</h2>
-            <p>Placeholder for hobbies</p>
-        <footer>
-            <h3>Contact</h3>
-            <p>Email: <a href = "mailto:natgonza99@gmail.com>natgonza99@gmail.com</a></p>
-            <p>&copy; 2025 Nathanael. All Rights Reserved.</p>
-        </footer>
-        <script src ="script.js"></script><!--Link to scripts.js file-->
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                console.log("JavaScript is loaded!"); // This should appear in the console if script is working.
-            });
-            </script>
+       
     </body>
+    <footer>
+        <div class=" footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target="_blank"><img
+                        src="Images/icons/linkedin_Icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Natgonza" target="_blank"><img src="Images/icons/GitHub_Icon.png"
+                        alt="GitHub"></a>
+                <a href="" target="_blank"><img src="Images/icons/TikTok_Icon.png" alt="TikTok"></a>
+                <a href="https://www.instagram.com/natgonza69/" target="_blank"><img
+                        src="Images/icons/Instagram_Icon.png" alt="Instagram"></a>
+                <a href="" target="_blank"><img src="Images/icons/YouTube_Icon.png" alt="YouTube"></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="footerBottom">
+                <p>&copy; Nathanael Gonzalez 2025 Designed By: Nathanael Gonzalez</p>
+            </div>
+    </footer>
 </html>
