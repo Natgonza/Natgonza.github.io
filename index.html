@@ -16,16 +16,15 @@
     <div class="header-container">
         <nav>
             <img src="Images/Logo.png" alt="Nathanael Gonzalez" class="logo">
-            <ul>
+            <ul id = "sideMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
+                <img class = "phoneImages" src = "Images/icons/Close_Icon.png" onclick="closeMenu()">
             </ul>
-            <a href="Nathanael Gonzalez Resume Revised 2025.pdf" download <button class="resume-button"><img
-                src="Images/icons/resume_Icon.png" alt="Resume">Download Resume</button></a>
-            </button>
+            <img class ="phoneImages" src = "Images/icons/Menu_Icon.png" onclick="openMenu()">
         </nav>
     </div>
 </header>
@@ -62,8 +61,7 @@
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web interfaces</li>
                             <li><span>Languages</span><br>Java, C++, C, and Python</li>
-                            <li><span>Programming Language Structure</span><br>Compiler, Syntax, Grammer, and Structure
-                            </li>
+                            <li><span>Programming Language Structure</span><br>Compiler, Syntax, Grammer, and Structure</li>
                             <li><span>Databases</span><br>SQL and MongoDB</li>
                         </ul>
                     </div>
@@ -72,14 +70,13 @@
                             <li><span>Amador Live</span><br>Server/Banquet Captain</li>
                             <li><span>New Mexico Vintage Wines</span><br>Bartender</li>
                             <li><span>Double Eagle De Mesilla</span><br>Server/Banquet Captain</li>
-                            <li><span>Databases</span><br>SQL and MongoDB</li>
                         </ul>
                     </div>
                     <div class="tabContents" id="education">
                         <ul>
-                            <li><span>Bachelors in Computer Science</span><br>New Mexico State University</li>
-                            <li><span>Assosiate of Science</span><br>Dona Ana Community College</li>
-                            <li><span>High School Diploma</span><br>Gadsden High School</li>
+                            <li><span>New Mexico State University</span><br>Bachelors in Computer Science</li>
+                            <li><span>Dona Ana Community College</span><br>Assosiate of Science</li>
+                            <li><span>Gadsden High School</span><br>High School Diploma</li>
 
                         </ul>
                     </div>
@@ -152,6 +149,18 @@
             }
             event.currentTarget.classList.add("activeLink");
             document.getElementById(tabname).classList.add("activeTab")
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
         }
     </script>
 

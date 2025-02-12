@@ -18,14 +18,120 @@
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
-            <a href="Nathanael Gonzalez Resume Revised 2025.pdf" download <button class="resume-button"><img
-                src="Images/icons/resume_Icon.png" alt="Resume">Download Resume</button></a>
-            </button>
         </nav>
     </div>
     </header>
     <body>
-       
+        
+        <div class = "aboutPageContainer">
+            <div class = "aboutPageRow">
+                <div class = "aboutPageCol1">
+                    <img src = "Images/You Are Going To Hate This.jpg">
+                </div>
+                <div class = "aboutPageCol2">
+                    <!------Rotating Head---------->
+                    <div class="rotatingHeading">
+                        <h1>
+                            Hello, I am a
+                            <div class="innerHeading">
+                                <span>
+                                    Programmer <br />
+                                    Server <br />
+                                    Bartender <br />
+                                    Team Player <br />
+                                </span>
+                            </div>
+                        </h1>
+                    </div>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;My name is Nathanael, a computer science student at New Mexico State University with a passion
+                        for programming, gaming, fitness, and art. Whether im building up my portfolio or learing about
+                        machine learning algorithms, I enjoy tackling challenges that push my understanding of technology.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Beyond programming, I have a background in mathmatics, an apprecitation in art, and a love for 
+                        music. When I'm not coding, you might find me at the gym furthuring my fitness goals or at home 
+                        playing some of my favorite games.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;On this page you will find everything that is me either, that being my favorite albums as well as 
+                        my favorite song on the album or, my favorite movies. I even included my fitness routines and hopefully
+                        I can upload videos and pictures of me at lifting competitions.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;I really hope you enjoy learning about who I am!!!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class = "interests">
+            <h1>My Interests</h1>
+            
+
+        <div class = "albumContainer">
+            <img src = "Images/February.jpg" alt = "February by February" class = "album" onclick = "openModal('modal1')">
+            <img src = "Images/bubba.jpeg" alt = "Bubba by Kaytranada" class = "album" onclick = "openModal('modal2')">
+            <img src = "Images/Buds.jpg" alt = "Buds by Surf Curse" class="album" onclick = "openModal('modal3')">
+            <img src = "Images/Foxtails.jpg" alt = "III by Foxtails" class = "album" onclick = "openModal('modal4')">
+        </div>
+
+
+        <!-------Modal Structure-------->
+        <div id = "modal1" class = "modal">
+            <div class = "modalContent">
+                <span class = "closeVideo" onclick = "closeModal('modal1')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QEwTtDXlpB4?si=6ZcB7V2I_UyDbvs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id = "modal2" class = "modal">
+            <div class = "modalContent">
+                <span class = "closeVideo" onclick = "closeModal('modal2')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S2-wrJ9yYiQ?si=AQx5-HNgRHMl8l1a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id = "modal3" class = "modal">
+            <div class = "modalContent">
+                <span class = "closeVideo" onclick = "closeModal('modal3')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T_Hwdv7MiBs?si=vcdXkM6hqwvIr30m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id = "modal4" class = "modal">
+            <div class = "modalContent">
+                <span class = "closeVideo" onclick = "closeModal('modal4')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3TztoNTFrN8?si=U0K1rC4lnX8afZmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+
+        <script>
+            function openModal(modalID) {
+                document.getElementById(modalID).style.display = "block";
+            }
+
+            function closeModal(modalID) {
+                document.getElementById(modalID).style.display = "none";
+            }
+
+            //Close the model when clicking outside of it
+            window.onclick = function(event) {
+                var modal = document.getElementById('modal');
+                for(var i = 0; i < modal.length; i++) {
+                    if (event.target == modal[i]) {
+                        modals[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </body>
     <footer>
         <div class=" footerContainer">
