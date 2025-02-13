@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width = device-width, initial-sclae = 1.0">
-        <title>About Me</title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
-    <header>
-        <!--Header Section-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-sclae = 1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <!--Header Section-->
     <div class="header-container">
         <nav>
             <img src="Images/Logo.png" alt="Nathanael Gonzalez" class="logo">
@@ -20,142 +21,171 @@
             </ul>
         </nav>
     </div>
-    </header>
-    <body>
-        
-        <div class = "aboutPageContainer">
-            <div class = "aboutPageRow">
-                <div class = "aboutPageCol1">
-                    <img src = "Images/You Are Going To Hate This.jpg">
-                </div>
-                <div class = "aboutPageCol2">
-                    <!------Rotating Head---------->
-                    <div class="rotatingHeading">
-                        <h1>
-                            Hello, I am a
-                            <div class="innerHeading">
-                                <span>
-                                    Programmer <br />
-                                    Server <br />
-                                    Bartender <br />
-                                    Team Player <br />
-                                </span>
-                            </div>
-                        </h1>
-                    </div>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;My name is Nathanael, a computer science student at New Mexico State University with a passion
-                        for programming, gaming, fitness, and art. Whether im building up my portfolio or learing about
-                        machine learning algorithms, I enjoy tackling challenges that push my understanding of technology.
-                    </p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Beyond programming, I have a background in mathmatics, an apprecitation in art, and a love for 
-                        music. When I'm not coding, you might find me at the gym furthuring my fitness goals or at home 
-                        playing some of my favorite games.
-                    </p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;On this page you will find everything that is me either, that being my favorite albums as well as 
-                        my favorite song on the album or, my favorite movies. I even included my fitness routines and hopefully
-                        I can upload videos and pictures of me at lifting competitions.
-                    </p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;I really hope you enjoy learning about who I am!!!
-                    </p>
-                </div>
+</header>
+
+<body>
+
+    <div class="aboutPageContainer">
+        <div class="aboutPageRow">
+            <div class="aboutPageCol1">
+                <img src="Images/Picture_of_Me/IMG_1998.jpg">
             </div>
-
+            <div class="aboutPageCol2">
+                <!------Rotating Head---------->
+                <div class="rotatingHeading">
+                    <h1>
+                        Hello, I am a
+                        <div class="innerHeading">
+                            <span>
+                                Programmer <br />
+                                Server <br />
+                                Bartender <br />
+                                Team Player <br />
+                            </span>
+                        </div>
+                    </h1>
+                </div>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;My name is Nathanael, a computer science student at New Mexico State
+                    University with a passion
+                    for programming, gaming, fitness, and art. Whether im building up my portfolio or learing about
+                    machine learning algorithms, I enjoy tackling challenges that push my understanding of technology.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Beyond programming, I have a background in mathmatics, an apprecitation in
+                    art, and a love for
+                    music. When I'm not coding, you might find me at the gym furthuring my fitness goals or at home
+                    playing some of my favorite games.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;On this page you will find everything that is me either, that being my
+                    favorite albums as well as
+                    my favorite song on the album or, my favorite movies. I even included my fitness routines and
+                    hopefully
+                    I can upload videos and pictures of me at lifting competitions.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;I really hope you enjoy learning about who I am!!!
+                </p>
+            </div>
         </div>
 
+    </div>
 
-        <div class = "interests">
-            <h1>My Interests</h1>
-            
 
-        <div class = "albumContainer">
-            <img src = "Images/February.jpg" alt = "February by February" class = "album" onclick = "openModal('modal1')">
-            <img src = "Images/bubba.jpeg" alt = "Bubba by Kaytranada" class = "album" onclick = "openModal('modal2')">
-            <img src = "Images/Buds.jpg" alt = "Buds by Surf Curse" class="album" onclick = "openModal('modal3')">
-            <img src = "Images/Foxtails.jpg" alt = "III by Foxtails" class = "album" onclick = "openModal('modal4')">
+    <div class="interests">
+        <h1>My Interests</h1>
+
+        <div class="interestHeaders">
+            <h2>Favorite Album</h2>
+            <h2>Favorite Movies</h2>
+            <h2>Hatsune Miku Dancing</h2>
         </div>
-
+        <div class="aboutColumn">
+            <div class="albumContainer">
+                <img src="Images/February.jpg" alt="February by February" class="album" onclick="openModal('modal1')">
+                <img src="Images/bubba.jpeg" alt="Bubba by Kaytranada" class="album" onclick="openModal('modal2')">
+                <img src="Images/Buds.jpg" alt="Buds by Surf Curse" class="album" onclick="openModal('modal3')">
+                <img src="Images/Foxtails.jpg" alt="III by Foxtails" class="album" onclick="openModal('modal4')">
+            </div>
+            <div class = "aboutVideo">
+                <video width="560" height="315" controls>
+                    <source src="Images/Miku.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
 
         <!-------Modal Structure-------->
-        <div id = "modal1" class = "modal">
-            <div class = "modalContent">
-                <span class = "closeVideo" onclick = "closeModal('modal1')">&times;</span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QEwTtDXlpB4?si=6ZcB7V2I_UyDbvs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="modal1" class="modal">
+            <div class="modalContent">
+                <span class="closeVideo" onclick="closeModal('modal1')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QEwTtDXlpB4?si=6ZcB7V2I_UyDbvs4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div id = "modal2" class = "modal">
-            <div class = "modalContent">
-                <span class = "closeVideo" onclick = "closeModal('modal2')">&times;</span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/S2-wrJ9yYiQ?si=AQx5-HNgRHMl8l1a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="modal2" class="modal">
+            <div class="modalContent">
+                <span class="closeVideo" onclick="closeModal('modal2')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S2-wrJ9yYiQ?si=AQx5-HNgRHMl8l1a"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div id = "modal3" class = "modal">
-            <div class = "modalContent">
-                <span class = "closeVideo" onclick = "closeModal('modal3')">&times;</span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/T_Hwdv7MiBs?si=vcdXkM6hqwvIr30m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="modal3" class="modal">
+            <div class="modalContent">
+                <span class="closeVideo" onclick="closeModal('modal3')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T_Hwdv7MiBs?si=vcdXkM6hqwvIr30m"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div id = "modal4" class = "modal">
-            <div class = "modalContent">
-                <span class = "closeVideo" onclick = "closeModal('modal4')">&times;</span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3TztoNTFrN8?si=U0K1rC4lnX8afZmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="modal4" class="modal">
+            <div class="modalContent">
+                <span class="closeVideo" onclick="closeModal('modal4')">&times;</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3TztoNTFrN8?si=U0K1rC4lnX8afZmv"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-        
+
 
     </div>
 
 
 
-        <script>
-            function openModal(modalID) {
-                document.getElementById(modalID).style.display = "block";
-            }
+    <script>
+        function openModal(modalID) {
+            document.getElementById(modalID).style.display = "block";
+        }
 
-            function closeModal(modalID) {
-                document.getElementById(modalID).style.display = "none";
-            }
+        function closeModal(modalID) {
+            document.getElementById(modalID).style.display = "none";
+        }
 
-            //Close the model when clicking outside of it
-            window.onclick = function(event) {
-                var modal = document.getElementById('modal');
-                for(var i = 0; i < modal.length; i++) {
-                    if (event.target == modal[i]) {
-                        modals[i].style.display = "none";
-                    }
+        //Close the model when clicking outside of it
+        window.onclick = function (event) {
+            var modal = document.getElementById('modal');
+            for (var i = 0; i < modal.length; i++) {
+                if (event.target == modal[i]) {
+                    modals[i].style.display = "none";
                 }
             }
-        </script>
-    </body>
-    <footer>
-        <div class=" footerContainer">
-            <div class="socialIcons">
-                <a href="https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target="_blank"><img
-                        src="Images/icons/linkedin_Icon.png" alt="LinkedIn"></a>
-                <a href="https://github.com/Natgonza" target="_blank"><img src="Images/icons/GitHub_Icon.png"
-                        alt="GitHub"></a>
-                <a href="" target="_blank"><img src="Images/icons/TikTok_Icon.png" alt="TikTok"></a>
-                <a href="https://www.instagram.com/natgonza69/" target="_blank"><img
-                        src="Images/icons/Instagram_Icon.png" alt="Instagram"></a>
-                <a href="" target="_blank"><img src="Images/icons/YouTube_Icon.png" alt="YouTube"></a>
-            </div>
-            <div class="footerNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </div>
+        }
+    </script>
+</body>
+<footer>
+    <div class=" footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.linkedin.com/in/nathanael-gonzalez-1b1b3b1b3/" target="_blank"><img
+                    src="Images/icons/linkedin_Icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Natgonza" target="_blank"><img src="Images/icons/GitHub_Icon.png"
+                    alt="GitHub"></a>
+            <a href="" target="_blank"><img src="Images/icons/TikTok_Icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/natgonza69/" target="_blank"><img src="Images/icons/Instagram_Icon.png"
+                    alt="Instagram"></a>
+            <a href="" target="_blank"><img src="Images/icons/YouTube_Icon.png" alt="YouTube"></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
 
-            <div class="footerBottom">
-                <p>&copy; Nathanael Gonzalez 2025 Designed By: Nathanael Gonzalez</p>
-            </div>
-    </footer>
+        <div class="footerBottom">
+            <p>&copy; Nathanael Gonzalez 2025 Designed By: Nathanael Gonzalez</p>
+        </div>
+</footer>
+
 </html>
