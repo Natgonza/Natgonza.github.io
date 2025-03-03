@@ -1,0 +1,32 @@
+<TYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Connect 4</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <h1>Connect 4 Game</h1>
+        <div id = "game-board" class = "game-board"></div>
+        <div id = "turn-display">Player 1's turn</div><!-------Display current turn------->
+        <button id = "reset-btn">Reset Game</button>
+
+        <!------Rules Panel-------->
+        <div id = "rules-panel" class = "rules-panel">
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Player 1 always starts on page reset.</li>
+                <li>Players take turns to drop colored discs into a 7x6 grid.</li>
+                <li>The first player to connect four discs is a row, either horizonally, vertically, or diagonally.</li>
+                <li>The first player to connect four discs wins the game.</li>
+                <li>If the grid is filled without a winner, the game is a draw.</li>
+                <li>Click the "Reset Game" button to start a new game.</li>
+                <li>The last player to win goes first the next round.</li>
+              </ul>
+            </ul>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>

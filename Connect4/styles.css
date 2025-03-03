@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #555c45;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.player1 {
+    background-color: #e27d60;
+}
+
+.cell.player2 {
+    background-color: #d4af37;
+}
+
+button {
+    background-color: #f2f2f2;  
+    color: #333;  
+    border: 2px solid #b87333;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: all 0.3s ease;  
+}
+
+button:hover {
+    background-color: #b87333;
+    color: #f5f5dc;
+}
+
+/*Styling for rules panel */
+.rules-panel {
+    background-color: #f5f5dc;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.rules-panel h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.rules-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rules-panel ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
