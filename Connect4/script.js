@@ -1,7 +1,13 @@
+
+
+const socket = io(); //Connect to the Socket.io server
 const rows = 6;
 const cols = 7;
 let board = [];
 let currentPlayer = 'player1'; //Player 1 is red and Player 2 is yellow
+
+const urlParams = new URLSearchParams(window.location.search);
+let gameId = urlParams.get("game") || "lobby";
 
 //Update the displayed turn
 function updateTurnDisplay() {
@@ -39,6 +45,7 @@ function renderBoard() {
 }//end renderBoard
 
 function handleCellClick(col) {
+    /*
     for(let row = rows - 1; row >= 0; row--) {
         if(!board[row][col]) {
             board[row][col] = currentPlayer;
@@ -49,7 +56,16 @@ function handleCellClick(col) {
             break;
         }//end if
     }//end for
+    */
+   socket.emit("playerMove", { gameId, column: col});
 }//end handleCellClick
+
+// Update the displayed turn
+function updateTurnDisplay() {
+  const turnDisplay = document.getElementById("turn-display");
+  turnDisplay.textContent =
+    currentPlayer === "player1" ? "Player 1's turn (Red)" : "Player 2's turn (Yellow)";
+}
 
 //Check if there is a winner
 function checkWin() {
@@ -93,5 +109,13 @@ function checkDirection(row, col, dRow, dCol) {
 //Reset the game when the reset button is pressed
 document.getElementById('reset-btn').addEventListener('click', initializeBoard);
 
+socket.on("gameState", (serverGame) => {
+    board = serverGame.board;
+    currentPlayer = serverGame.currentPlayer;
+    renderBoard();
+    updateTurnDisplay();
+});
+
+socket.emit("joinGame", gameId);
 //Initialize the board
 initializeBoard();
